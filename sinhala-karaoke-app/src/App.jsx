@@ -19,6 +19,9 @@ function App() {
   const [error, setError] = useState(null)
   const [view, setView] = useState('grid') // 'grid' or 'detail'
 
+  const BACKEND_URL = 'https://e23ac840-5b8c-4294-b469-5db839b31678-dev.e1-us-east-azure.choreoapis.dev/sinhalakaroke/sinhala-karaoke-app-ug/v1.0'
+
+
   // Load data on component mount
   useEffect(() => {
     loadInitialData()
@@ -33,11 +36,17 @@ function App() {
     setLoading(true)
     setError(null)
     try {
-      // Load genres, artists, and all songs
-      const [genresRes, artistsRes, songsRes] = await Promise.all([
-        axios.get('/api/genres'),
-        axios.get('/api/artists'),
-        axios.get('/api/songs/list')
+      // Load genres, artists, and all songs [local run]
+      // const [genresRes, artistsRes, songsRes] = await Promise.all([
+      //   axios.get('/api/genres'),
+      //   axios.get('/api/artists'),
+      //   axios.get('/api/songs/list')
+
+       //for choreo
+        const [genresRes, artistsRes, songsRes] = await Promise.all([
+        axios.get(`${BACKEND_URL}/api/genres`),
+        axios.get(`${BACKEND_URL}/api/artists`),
+        axios.get(`${BACKEND_URL}/api/songs/list`)
       ])
 
       setGenres(genresRes.data)
