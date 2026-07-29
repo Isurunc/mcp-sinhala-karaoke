@@ -15,7 +15,7 @@ Both projects share the same database of 10 classic and modern Sinhala songs.
 
 ## 📦 What's Included
 
-### **MCP Server** (\sinhala-karaoke-mcp/\)
+### **MCP Server** (sinhala-karaoke-mcp)
 - Node.js-based Model Context Protocol server
 - 7 tools for querying song data
 - Works with Claude, ChatGPT, and other LLM integrations
