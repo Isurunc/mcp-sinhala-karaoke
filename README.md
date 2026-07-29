@@ -21,7 +21,7 @@ Both projects share the same database of 10 classic and modern Sinhala songs.
 - Works with Claude, ChatGPT, and other LLM integrations
 - Bilingual support (English & Sinhala)
 
-### **React Web App** (\sinhala-karaoke-app/\)
+### **React Web App** (sinhala-karaoke-app)
 - Modern React 18 + Vite frontend
 - Express.js backend with REST API
 - Beautiful gradient UI with animations
@@ -45,11 +45,11 @@ cd sinhala-karaoke-app
 npm install
 npm start
 
-Then open: \http://localhost:3000\
+Then open: http://localhost:3000
 
 ### **Option 2: Use the MCP Server**
 
-```bash
+
 cd sinhala-karaoke-mcp
 npm install
 npm run build
