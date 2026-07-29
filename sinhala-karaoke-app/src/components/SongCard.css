@@ -1,0 +1,114 @@
+.song-card {
+  position: relative;
+  border-radius: 12px;
+  padding: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.song-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.1);
+  pointer-events: none;
+}
+
+.song-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.song-card-content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.song-number {
+  font-size: 12px;
+  opacity: 0.9;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.song-title {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0;
+  line-height: 1.3;
+}
+
+.song-title-sinhala {
+  font-size: 16px;
+  margin: 5px 0 0 0;
+  opacity: 0.95;
+  font-weight: 500;
+}
+
+.song-artist {
+  font-size: 14px;
+  opacity: 0.85;
+  margin: 5px 0 0 0;
+}
+
+.song-card-overlay {
+  position: relative;
+  z-index: 2;
+  margin-top: 15px;
+}
+
+.view-btn {
+  background: rgba(255, 255, 255, 0.25);
+  color: white;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  width: 100%;
+  backdrop-filter: blur(5px);
+}
+
+.song-card:hover .view-btn {
+  background: rgba(255, 255, 255, 0.35);
+  border-color: white;
+  transform: none;
+}
+
+.view-btn:active {
+  transform: scale(0.98);
+}
+
+@media (max-width: 480px) {
+  .song-card {
+    padding: 20px;
+    min-height: 220px;
+  }
+
+  .song-title {
+    font-size: 18px;
+  }
+
+  .song-title-sinhala {
+    font-size: 14px;
+  }
+
+  .song-artist {
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,6 @@
+ReferenceError: require is not defined
+    at main (file:///D:/Enterprize/ClaudeDemo/sinhala-karaoke-mcp/dist/index.js:237:16)
+    at file:///D:/Enterprize/ClaudeDemo/sinhala-karaoke-mcp/dist/index.js:256:1
+    at ModuleJob.run (node:internal/modules/esm/module_job:569:25)
+    at async node:internal/modules/esm/loader:650:26
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5)

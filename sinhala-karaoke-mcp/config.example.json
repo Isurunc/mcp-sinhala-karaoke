@@ -1,0 +1,23 @@
+{
+  "comment": "Example configuration for integrating Sinhala Karaoke MCP Server with Claude Desktop",
+  "claude_desktop_config": {
+    "mcpServers": {
+      "sinhala-karaoke": {
+        "command": "node",
+        "args": ["/Users/yourusername/path/to/sinhala-karaoke-mcp/dist/index.js"]
+      }
+    }
+  },
+  "windows_path_example": "C:\\Users\\YourUsername\\sinhala-karaoke-mcp\\dist\\index.js",
+  "macos_linux_path_example": "/home/username/sinhala-karaoke-mcp/dist/index.js",
+  "instructions": {
+    "step_1": "Copy the sinhala-karaoke-mcp directory to a permanent location on your system",
+    "step_2": "Build the project: npm install && npm run build",
+    "step_3": "Find your Claude config file location:",
+    "step_3a": "macOS/Linux: ~/.config/Claude/claude_desktop_config.json",
+    "step_3b": "Windows: %APPDATA%\\Claude\\claude_desktop_config.json",
+    "step_4": "Add the mcpServers section (see example above)",
+    "step_5": "Restart Claude Desktop for changes to take effect",
+    "step_6": "The MCP server tools will now be available in Claude!"
+  }
+}
