@@ -85,7 +85,7 @@ npm start
 ### Setup Steps
 
 \\\ash
-git clone https://github.com/Isurunc/mcp-sinhala-karaoke.git
+git clone https://github.com/[username]/mcp-sinhala-karaoke.git
 cd mcp-sinhala-karaoke
 
 # For Web App
