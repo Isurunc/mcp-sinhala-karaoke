@@ -168,8 +168,6 @@ vercel
 \\\ash
 cd sinhala-karaoke-app
 npm run build
-# Upload dist/ to Netlify
-\\\
 
 ---
 
