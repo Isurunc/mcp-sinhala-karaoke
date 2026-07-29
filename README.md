@@ -49,7 +49,7 @@ Then open: http://localhost:3000
 
 ### **Option 2: Use the MCP Server**
 
-
+```bash
 cd sinhala-karaoke-mcp
 npm install
 npm run build
