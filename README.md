@@ -59,7 +59,7 @@ npm start
 ### **Option 3: Run Both Projects**
 
 **Terminal 1:**
-\\\ash
+```bash
 cd sinhala-karaoke-mcp
 npm install
 npm run build
