@@ -40,11 +40,10 @@ Both projects share the same database of 10 classic and modern Sinhala songs.
 
 ### **Option 1: Run the Web App (Easiest)**
 
-\`\`\`bash
+```bash
 cd sinhala-karaoke-app
 npm install
 npm start
-\`\`\`
 
 Then open: \http://localhost:3000\
 
